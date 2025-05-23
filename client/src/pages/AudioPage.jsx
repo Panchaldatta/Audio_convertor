@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { getAudioFileById } from "../services/audioService";
 
 const AudioPage = () => {
-  const { audioId } = useParams();  // Retrieve audioId from URL params
+  const { audioId } = useParams();  
   const [audioFile, setAudioFile] = useState(null);
 
   useEffect(() => {
